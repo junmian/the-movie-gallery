@@ -21,7 +21,7 @@ The Movie Gallery is a demo website that features a photo gallery of movies, org
 
 Initial Wireframe           |  Finished Product
 :-------------------------:|:-------------------------:
-<img src="https://github.com/junmianchen/the-movie-gallery/blob/main/images/initial-wireframe.png" alt="Initial Wireframe"> | <img src="https://github.com/junmianchen/the-movie-gallery/blob/main/images/finished-product.png" alt="Finished Product">
+<img src="https://github.com/junmian/the-movie-gallery/blob/main/images/initial-wireframe.png" alt="Initial Wireframe"> | <img src="https://github.com/junmian/the-movie-gallery/blob/main/images/finished-product.png" alt="Finished Product">
 
 ## Timeframe
 
