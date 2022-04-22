@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="keywords" content="About us Page, Photo Gallery" />
+    <meta name="description" content="This is the About us page for (topic) Photo Gallery" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="images/icon.png" />
+    <title>Admin | Gallery</title>
+    <script src="gallery.js" defer></script>
+  </head>
+
+  <body
+    id="body"
+    style="
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+        url(images/Film-Roll/bluefilmroll2.jpg);
+    "
+  >
+    <nav class="nav">
+      <img class="logo" src="images/Admin-Page/logo.PNG" />
+      <ul class="nav__links">
+        <li class="nav__links-items"><a href="index_admin.html">Home</a></li>
+        <li class="nav__links-items">
+          <a href="gallery_admin.html">Gallery</a>
+          <ul class="sublinks">
+            <li class="sublinks-items" id="horror-subitem">
+              <a href="gallery_admin.html" id="horror_choice">Horror</a>
+            </li>
+            <li class="sublinks-items" id="sci-fi-subitem">
+              <a href="gallery_admin.html#scifi_anchor" id="scifi_choice">Sci-Fi</a>
+            </li>
+            <li class="sublinks-items" id="superhero-subitem">
+              <a href="gallery_admin.html#superhero_anchor" id="superhero_choice">Superhero</a>
+            </li>
+            <li class="sublinks-items" id="kids-subitem">
+              <a href="gallery_admin.html#kids_anchor" id="kids_choice">Kids</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__links-items">
+          <a href="aboutUs_admin.html">About Us</a>
+        </li>
+        <li class="nav__links-items">
+          <a href="contactUs_admin.html">Contact Us</a>
+        </li>
+        <li class="nav__links-items">
+          <a href="adminInterface.html"><i class="fas fa-user-cog"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div id="horror_anchor"></div>
+      <h1 id="h1_horror">Horror</h1>
+      <div class="horror_container">
+        <img
+          class="photo"
+          src="images/Photo-Gallery/Nun.jpg"
+          id="nun"
+          alt="Nun"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/annabelle.jpg"
+          id="annabelle"
+          alt="Annabelle"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/exists.jpg"
+          id="exists"
+          alt="Exists"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/a nightmare on elm street.jpg"
+          id="elm_street"
+          alt="A Nightmare on Elm Street"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/halloween.png"
+          id="halloween"
+          alt="Halloween"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/mama.jpg"
+          id="mama"
+          alt="Mama"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/saw.png"
+          id="saw"
+          alt="Saw"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/the conjuring.jpg"
+          id="conjuring"
+          alt="The Conjuring"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/the exorcist.jpg"
+          id="exorcist"
+          alt="The Exorcist"
+          onclick="openImg(this)"
+        />
+      </div>
+
+      <div id="scifi_anchor"></div>
+      <h1 class="title_margintop" id="h1_scifi">Scifi</h1>
+      <div class="scifi_container">
+        <img
+          class="photo"
+          src="images/Photo-Gallery/hp.jpg"
+          id="hp"
+          alt="Harry Potter and the Deathly Hallows"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/Interstellar.jpg"
+          id="interstellar"
+          alt="Interstellar"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/inception.jpg"
+          id="inception"
+          alt="Inception"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/Matrix.jpg"
+          id="matrix"
+          alt="Matrix"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/oblivion.jpg"
+          id="oblivion"
+          alt="Oblivion"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/invasion.jpg"
+          id="invasion"
+          alt="Invasion Planet Earth"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/zone414.jpg"
+          id="zone414"
+          alt="Zone 414"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/infinite.jpg"
+          id="infinite"
+          alt="Infinite"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/edge of tomorrow.jpg"
+          id="edgeoftomorrow"
+          alt="Edge of Tomorrow"
+          onclick="openImg(this)"
+        />
+      </div>
+
+      <div id="superhero_anchor"></div>
+      <h1 class="title_margintop" id="h1_superhero">Superhero</h1>
+      <div class="superhero_container">
+        <img
+          class="photo"
+          src="images/Photo-Gallery/spiderman.jpg"
+          id="spiderman"
+          alt="Spideman Homecoming"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/civil war captain america.jpg"
+          id="civilwar"
+          alt="Civil War - Captain America"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/justice league.jpg"
+          id="jl"
+          alt="Justice League"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/venom.png"
+          id="venom"
+          alt="Venom"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/black widow.jpg"
+          id="backWidow"
+          alt="Black Widow"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/wonder woman.jpg"
+          id="wonderWoman"
+          alt="Wonder Woman"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/batman.jpg"
+          id="batman"
+          alt="The Batman"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/aquaman.jpg"
+          id="aquaman"
+          alt="Aquaman"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/thor.jpg"
+          id="thorRagnarok"
+          alt="Thor Ragnarok"
+          onclick="openImg(this)"
+        />
+      </div>
+
+      <div id="kids_anchor"></div>
+      <h1 class="title_margintop" id="h1_kids">Kids</h1>
+      <div class="kids_container">
+        <img
+          class="photo"
+          src="images/Photo-Gallery/Maleficent.jpg"
+          id="maleficent"
+          alt="Maleficent"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/Narnia.webp"
+          id="narnia"
+          alt="The Chronicles of Narnia"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/minions.jpg"
+          id="minions"
+          alt="Minions"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/ice age.jpg"
+          id="iceAge"
+          alt="Ice Age Continental Drift"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/raya and the last dragono.png"
+          id="raya"
+          alt="Raya and the Last Dragon"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/coco.webp"
+          id="coco"
+          alt="Coco"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/tintin.jpg"
+          id="tintin"
+          alt="The adventures of Tintin"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/frozen.jpeg"
+          id="frozon"
+          alt="Frozen II"
+          onclick="openImg(this)"
+        />
+        <img
+          class="photo"
+          src="images/Photo-Gallery/boss baby.jpg"
+          id="bossbaby"
+          alt="The Boss Baby"
+          onclick="openImg(this)"
+        />
+      </div>
+    </div>
+
+    <div class="modal_window" id="main_modal">
+      <span class="close_window" id="close">&times;</span>
+      <img class="modal_content" id="img_holder" />
+      <div class="modal_caption" id="caption"></div>
+    </div>
+
+    <input type="button" id="go-to-top" value="Go to top" onclick="goToTop()" />
+
+    <footer class="footer">
+      <p class="footer-content">
+        &copy; 2021 The Movie Gallery |<button
+          class="admin-button"
+          onclick="HTMLDocument=location.href = 'logoutPage.html'"
+          style="width: auto"
+        >
+          &nbsp;Logout
+        </button>
+      </p>
+    </footer>
+  </body>
+</html>

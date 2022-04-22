@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="keywords" content="About us Page, Photo Gallery" />
+    <meta name="description" content="This is the About us page for (topic) Photo Gallery" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="adminInterface.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="images/icon.png" />
+    <title>Admin Panel</title>
+    <script src="gallery.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="nav">
+      <img class="logo" src="images/Admin-Page/logo.PNG" />
+      <ul class="nav__links">
+        <li class="nav__links-items"><a href="index_admin.html">Home</a></li>
+        <li class="nav__links-items">
+          <a href="gallery_admin.html">Gallery</a>
+          <ul class="sublinks">
+            <li class="sublinks-items" id="horror-subitem">
+              <a href="gallery_admin.html" id="horror_choice">Horror</a>
+            </li>
+            <li class="sublinks-items" id="sci-fi-subitem">
+              <a href="gallery_admin.html#scifi_anchor" id="scifi_choice">Sci-Fi</a>
+            </li>
+            <li class="sublinks-items" id="superhero-subitem">
+              <a href="gallery_admin.html#superhero_anchor" id="superhero_choice">Superhero</a>
+            </li>
+            <li class="sublinks-items" id="kids-subitem">
+              <a href="gallery_admin.html#kids_anchor" id="kids_choice">Kids</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__links-items">
+          <a href="aboutUs_admin.html">About Us</a>
+        </li>
+        <li class="nav__links-items">
+          <a href="contactUs_admin.html">Contact Us</a>
+        </li>
+        <li class="nav__links-items">
+          <a href="adminInterface.html"><i class="fas fa-user-cog"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <h1 id="horror_category">
+      Horror
+      <i id="horror_icon" class="far fa-plus-square" onclick="expandHorror()"></i>
+    </h1>
+    <h1 id="scifi_category">Sci-Fi <i class="far fa-plus-square" onclick="expand()"></i></h1>
+    <h1 id="superhero_category">Superhero <i class="far fa-plus-square" onclick="expand()"></i></h1>
+
+    <div class="kids_image-containter">
+      <h1 id="kids_category">
+        Kids
+        <i id="kids_fa" class="fa fa-minus-square-o" aria-hidden="true"></i>
+        <input type="button" class="addButton button_class" value="Add" />
+        <input type="button" class="updateButton button_class" value="Update" />
+        <input type="button" class="deleteButton button_class" value="Delete" />
+      </h1>
+      <p class="movie_name" onclick="">Minions</p>
+      <p class="movie_name">Maleficent</p>
+      <p class="movie_name">The Chronicles of Narnia</p>
+      <p class="movie_name">Ice Age Continental Drift</p>
+      <p class="movie_name">Frozen II</p>
+      <p class="movie_name">The Boss Baby</p>
+      <p class="movie_name">Raya and The Last Dragon</p>
+      <p class="movie_name">Coco</p>
+      <p class="movie_name">The Adventures of Tintin</p>
+    </div>
+    <input type="button" id="go-to-top" value="Go to top" onclick="goToTop()" />
+
+    <footer class="footer">
+      <p class="footer-content">
+        &copy; 2021 The Movie Gallery |<button
+          class="admin-button"
+          onclick="HTMLDocument=location.href = 'logoutPage.html'"
+          style="width: auto"
+        >
+          &nbsp;Logout
+        </button>
+      </p>
+    </footer>
+  </body>
+</html>

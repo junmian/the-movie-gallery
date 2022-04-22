@@ -1,0 +1,206 @@
+/* Contact page */
+
+.centerContact {
+  position: absolute;
+  top: 8vh;
+  width: 100%;
+  height: 85%;
+}
+
+.centerContact * {
+  color: rgb(206, 201, 201);
+  font-family: cursive;
+}
+
+.line1 {
+  position: absolute;
+  top: 88px;
+  left: 27%;
+  width: 64%;
+  height: 2px;
+  background-color: rgb(206, 201, 201);
+}
+
+.contactWord {
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  left: 8%;
+  top: 65px;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.iconsFolder {
+  position: relative;
+  top: 77%;
+  left: 7.5%;
+  width: 40%;
+  height: 110px;
+}
+
+#facebook {
+  position: absolute;
+  top: 20px;
+}
+
+#inst {
+  position: absolute;
+  top: 20px;
+  left: 25%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#twitter {
+  position: absolute;
+  top: 20px;
+  left: 55%;
+  padding-left: 30px;
+}
+
+.contactFolder {
+  position: relative;
+  top: 6%;
+  left: 7%;
+  height: 220px;
+  width: 450px;
+}
+
+.phoneicon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.emailicon {
+  position: absolute;
+  top: 60px;
+  left: 3px;
+}
+
+.locationicon {
+  position: absolute;
+  top: 130px;
+  left: 1px;
+}
+
+.phoneNumber {
+  font-size: 25px;
+  position: absolute;
+  top: 8px;
+  left: 170px;
+}
+
+.emailtext {
+  font-size: 25px;
+  position: absolute;
+  top: 70px;
+  left: 170px;
+}
+
+.locationtext {
+  font-size: 25px;
+  position: absolute;
+  top: 140px;
+  left: 168px;
+  width: 60%;
+}
+
+.formBlock {
+  position: absolute;
+  left: 55%;
+  top: 27%;
+  height: 300px;
+  width: 500px;
+}
+
+#firstname {
+  text-transform: capitalize;
+  text-align: left;
+  font-size: 15px;
+  color: black;
+  background-color: rgb(206, 201, 201);
+  border-radius: 5px;
+  width: 309px;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  border: 2px solid rgb(206, 201, 201);
+  cursor: pointer;
+}
+
+.name {
+  position: absolute;
+  left: 102px;
+  top: 12px;
+}
+
+#email {
+  text-transform: lowercase;
+  text-align: left;
+  /* padding-left: 10px; */
+  font-size: 15px;
+  color: black;
+  background-color: rgb(206, 201, 201);
+  border-radius: 5px;
+  width: 300px;
+  height: 35px;
+  position: absolute;
+  top: 77px;
+  right: 0px;
+  cursor: pointer;
+  border: 2px solid rgb(206, 201, 201);
+}
+
+.email {
+  position: absolute;
+  left: 97px;
+  top: 84px;
+}
+
+#comments {
+  /* text-transform: lowercase; */
+  text-align: left;
+  /* padding-left: 10px; */
+  font-size: 15px;
+  color: black;
+  background-color: rgb(206, 201, 201);
+  border-radius: 5px;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 148px;
+  right: 0px;
+  cursor: pointer;
+  border: 2px solid rgb(206, 201, 201);
+  /* padding-left: 20px; */
+}
+
+.message {
+  position: absolute;
+  left: 80px;
+  top: 155px;
+}
+
+#submit {
+  position: absolute;
+  top: 285px;
+  right: 0px;
+  letter-spacing: 2px;
+  height: 30px;
+  width: 15%;
+  font-size: 15px;
+  border-radius: 10%;
+  background-color: rgb(206, 201, 201);
+  border: 2px solid rgb(206, 201, 201);
+  color: black;
+  cursor: pointer;
+}
+
+#error {
+  position: absolute;
+  top: 287px;
+  left: 80px;
+  max-width: 300px;
+}

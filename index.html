@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="keywords" content="About us Page, Photo Gallery" />
+    <meta name="description" content="This is the About us page for (topic) Photo Gallery" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Home</title>
+    <link rel="icon" href="images/icon.png" />
+  </head>
+
+  <body id="body">
+    <nav class="nav">
+      <img class="logo" src="images/Admin-Page/logo.PNG" />
+      <ul class="nav__links">
+        <li class="nav__links-items"><a href="index.html">Home</a></li>
+        <li class="nav__links-items">
+          <a href="gallery.html">Gallery</a>
+          <ul class="sublinks">
+            <li class="sublinks-items" id="horror-subitem">
+              <a href="gallery.html#anchor" id="horror_choice">Horror</a>
+            </li>
+            <li class="sublinks-items" id="sci-fi-subitem">
+              <a href="gallery.html#scifi_anchor" id="scifi_choice">Sci-Fi</a>
+            </li>
+            <li class="sublinks-items" id="superhero-subitem">
+              <a href="gallery.html#superhero_anchor" id="superhero_choice">Superhero</a>
+            </li>
+            <li class="sublinks-items" id="kids-subitem">
+              <a href="gallery.html#kids_anchor" id="kids_choice">Kids</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__links-items"><a href="aboutUs.html">About Us</a></li>
+        <li class="nav__links-items">
+          <a href="contactUs.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="slideshow middle">
+      <div class="slides">
+        <input type="radio" name="radio" id="r1" checked />
+        <input type="radio" name="radio" id="r2" />
+        <input type="radio" name="radio" id="r3" />
+        <input type="radio" name="radio" id="r4" />
+
+        <div class="genre g1">
+          <a href="gallery.html" class="genre__HL">Horror</a>
+          <img class="movie__genre" id="horror" src="images/Categories/horror.jpg" alt="Horror" />
+        </div>
+
+        <div class="genre">
+          <a href="gallery.html#scifi_anchor" class="genre__HL">Sci-Fi</a>
+
+          <img class="movie__genre" id="scifi" src="images/Categories/Scifi.jpg" alt="Scifi" />
+        </div>
+
+        <div class="genre">
+          <a href="gallery.html#superhero_anchor" class="genre__HL">Superhero</a>
+
+          <img
+            class="movie__genre"
+            id="superhero"
+            src="images/Categories/superhero.jpg"
+            alt="Super hero"
+          />
+        </div>
+
+        <div class="genre">
+          <a href="gallery.html#kids_anchor" class="genre__HL">Kids</a>
+          <img class="movie__genre" id="kids" src="images/Categories/kids.jpg" alt="Kids" />
+        </div>
+      </div>
+
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="footer-content">
+        &copy; 2021 The Movie Gallery |<button
+          class="admin-button"
+          onclick="document.getElementById('modal-login').style.display='block'"
+          style="width: auto"
+        >
+          &nbsp;Admin Login
+        </button>
+      </p>
+
+      <div id="modal-login" class="modal">
+        <form class="modal-content animate">
+          <div class="login-picture">
+            <span
+              onclick="document.getElementById('modal-login').style.display='none'"
+              class="close"
+              title="Close Login"
+              >&times;</span
+            >
+            <img src="images/Admin-Page/logo.PNG" alt="Login Photo" class="login-photo" />
+          </div>
+
+          <div class="modal-container">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required /><br />
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required /><br />
+
+            <!-- <button type="submit">Login</button> href="index_admin.html"-->
+            <button>
+              <a
+                style="text-decoration: none; color: white"
+                onclick="verify()"
+                href="index_admin.html"
+                >Login</a
+              >
+            </button>
+            <button
+              type="button"
+              onclick="document.getElementById('modal-login').style.display='none'"
+              class="cancel-button"
+            >
+              Cancel</button
+            ><br />
+            <span class="password"
+              ><a style="text-decoration: none; color: white" href="index.html"
+                >Forgot password?</a
+              ></span
+            >
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("modal-login");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+      function verify() {}
+    </script>
+  </body>
+</html>

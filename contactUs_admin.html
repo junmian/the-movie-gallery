@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="keywords" content="About us Page, Photo Gallery" />
+  <meta name="description" content="This is the About us page for (topic) Photo Gallery" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="contactUs.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Admin | Contact us</title>
+  <link rel="icon" href="images/icon.png" />
+</head>
+
+<body id="body">
+  <nav class="nav">
+    <img class="logo" src="images/Admin-Page/logo.PNG" />
+    <ul class="nav__links">
+      <li class="nav__links-items"><a href="index_admin.html">Home</a></li>
+      <li class="nav__links-items">
+        <a href="gallery_admin.html">Gallery</a>
+        <ul class="sublinks">
+          <li class="sublinks-items" id="horror-subitem">
+            <a href="gallery_admin.html" id="horror_choice">Horror</a>
+          </li>
+          <li class="sublinks-items" id="sci-fi-subitem">
+            <a href="gallery_admin.html#scifi_anchor" id="scifi_choice">Sci-Fi</a>
+          </li>
+          <li class="sublinks-items" id="superhero-subitem">
+            <a href="gallery_admin.html#superhero_anchor" id="superhero_choice">Superhero</a>
+          </li>
+          <li class="sublinks-items" id="kids-subitem">
+            <a href="gallery_admin.html#kids_anchor" id="kids_choice">Kids</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__links-items">
+        <a href="aboutUs_admin.html">About Us</a>
+      </li>
+      <li class="nav__links-items">
+        <a href="contactUs_admin.html">Contact Us</a>
+      </li>
+      <li class="nav__links-items">
+        <a href="adminInterface.html"><i class="fas fa-user-cog"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="centerContact">
+    <div class="contactWord">contacts</div>
+    <div class="iconsFolder">
+      <a href="https://www.facebook.com/" target="_blank" id="facebook"><img src="Images/facebook.png"
+          width="50px" /></a>
+      <a href="https://www.instagram.com/" target="_blank" id="inst"><img src="Images/inst.png" width="50px" /></a>
+      <a href="https://twitter.com/" target="_blank" id="twitter"><img src="Images/twitter.png" width="50px" /></a>
+    </div>
+
+    <div class="formBlock">
+      <form action="#" method="post" enctype="multipart/form-data" id="form">
+        <label for="firstname" class="name">Name&nbsp;<sup>*</sup>&nbsp;</label>
+        <input type="text" name="firstname" id="firstname" autocomplete="off" />
+
+        <label for="email" class="email">E-mail&nbsp;<sup>*</sup>&nbsp;</label>
+        <input type="email" name="email" id="email" autocomplete="off" />
+
+        <label for="comments" class="message">Message&nbsp;<sup>*</sup>&nbsp;</label>
+        <textarea name="text" id="comments" autocomplete="off"></textarea>
+
+        <div id="error" style="color: red"></div>
+
+        <input type="submit" value="Send" id="submit" />
+      </form>
+    </div>
+
+    <div class="line1"></div>
+    <div class="contactFolder">
+      <div class="emailicon"><img src="Images/email.png" width="45" /></div>
+      <div class="phoneicon"><img src="Images/phone.png" width="48" /></div>
+      <div class="locationicon">
+        <img src="Images/location.png" width="48" />
+      </div>
+      <div class="phoneNumber">(555) 555 - 5555</div>
+      <div class="emailtext">tmg@hotmail.com</div>
+      <div class="locationtext">4700 Keele St,Toronto ON, Canada M3J 1P3</div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p class="footer-content">
+      &copy; 2021 The Movie Gallery |<button class="admin-button"
+        onclick="HTMLDocument=location.href = 'logoutPage.html'" style="width: auto">
+        &nbsp;Logout
+      </button>
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="keywords" content="About us Page, Photo Gallery" />
+    <meta name="description" content="This is the About us page for (topic) Photo Gallery" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="AboutUs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Admin | About Us</title>
+    <link rel="icon" href="images/icon.png" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <img class="logo" src="images/Admin-Page/logo.PNG" />
+      <ul class="nav__links">
+        <li class="nav__links-items"><a href="index_admin.html">Home</a></li>
+        <li class="nav__links-items">
+          <a href="gallery_admin.html">Gallery</a>
+          <ul class="sublinks">
+            <li class="sublinks-items" id="horror-subitem">
+              <a href="gallery_admin.html" id="horror_choice">Horror</a>
+            </li>
+            <li class="sublinks-items" id="sci-fi-subitem">
+              <a href="gallery_admin.html#scifi_anchor" id="scifi_choice">Sci-Fi</a>
+            </li>
+            <li class="sublinks-items" id="superhero-subitem">
+              <a href="gallery_admin.html#superhero_anchor" id="superhero_choice">Superhero</a>
+            </li>
+            <li class="sublinks-items" id="kids-subitem">
+              <a href="gallery_admin.html#kids_anchor" id="kids_choice">Kids</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__links-items">
+          <a href="aboutUs_admin.html">About Us</a>
+        </li>
+        <li class="nav__links-items">
+          <a href="contactUs_admin.html">Contact Us</a>
+        </li>
+        <li class="nav__links-items">
+          <a href="adminInterface.html"><i class="fas fa-user-cog"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="aboutUsContent">
+      <h1>About Us</h1>
+      <p>
+        The film industry has seen significant growth in viewership since the start of the pandemic.
+        With so many of us cooped up in the house all day, we naturally turn to movies to enjoy our
+        free time. Where do you turn to for movie suggestions?
+      </p>
+      <p>
+        The Movie Gallery features some of the most popular films of all time. Each film provides a
+        quick snapshot of info for you to quickly decide whether you’d like to watch it. With
+        several genres to choose from, you will easily find something of interest. And who knows,
+        you might even cross over to another genre you did not know you liked.
+      </p>
+    </div>
+
+    <footer class="footer" style="margin-top: 50px">
+      <p class="footer-content">
+        &copy; 2021 The Movie Gallery |<button
+          class="admin-button"
+          onclick="HTMLDocument=location.href = 'logoutPage.html'"
+          style="width: auto"
+        >
+          &nbsp;Logout
+        </button>
+      </p>
+    </footer>
+  </body>
+</html>
